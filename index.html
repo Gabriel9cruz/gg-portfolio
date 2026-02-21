@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Cruz - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <video class="bg-video" autoplay muted loop playsinline>
+        <source src="assets/background.mp4" type="video/mp4">
+    </video>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">GG</div>
+            <ul class="nav-menu">
+                <li><a href="#projects">[ PROJECTS ]</a></li>
+                <li><a href="#about">[ ABOUT ]</a></li>
+                <li><a href="#experience">[ EXPERIENCE ]</a></li>
+                <li><a href="#skills">[ SKILLS ]</a></li>
+                <li><a href="#contact">[ CONTACT ]</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <canvas id="canvas-3d"></canvas>
+        <div class="hero-content">
+            <h1 class="hero-title">Gabriel Cruz</h1>
+            <p class="hero-subtitle">Animation · 3D Artist · Video Editor</p>
+            <p class="hero-description">I create modern, responsive web experiences with cutting-edge design and
+                functionality.</p>
+            <a class="cta-button no-smooth" href="#contact">CONTACT ME →</a>
+        </div>
+    </header>
+
+    <div class="marquee-divider" aria-hidden="true">
+        <div class="marquee-track">
+            <span class="marquee-seed">GG · GG · GG · GG · GG · GG · GG · GG · GG · GG · GG · GG · GG · GG · GG · GG ·
+                GG · GG · GG · GG · GG · GG · GG · GG · GG · GG · GG · GG · GG · GG · </span>
+        </div>
+    </div>
+
+    <div class="video-band">
+        <video class="band-bg-video" autoplay muted loop playsinline>
+            <source src="assets/eras videos collage 2 low.mp4" type="video/mp4">
+        </video>
+        <div class="band-overlay"></div>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <span class="section-label">[ FEATURED WORK ]</span>
+                <h2>Projects</h2>
+                <div class="projects-list">
+                    <div class="project-item">3D Modeling &amp; Animation</div>
+                    <div class="project-item">Broadcast Production</div>
+                    <div class="project-item">Visual Effects &amp; Compositing</div>
+                    <div class="project-item">Motion Graphics &amp; Titles</div>
+                    <div class="project-item">Interactive Web Experiences</div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <section id="about" class="section alt about-section">
+        <video class="about-bg-video" autoplay muted loop playsinline>
+            <source src="assets/video portfolio gg1 low.mp4" type="video/mp4">
+        </video>
+        <div class="about-video-overlay"></div>
+        <div class="container">
+            <span class="section-label">[ WHO I AM ]</span>
+            <h2>About Me</h2>
+            <p class="about-text">I'm Gabriel Cruz — a multi-disciplinary creative with expertise in 3D modeling,
+                animation, VFX, video editing, motion graphics, and programming. I fuse technical precision with
+                creative vision to craft immersive, high-impact content.</p>
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <div class="container">
+            <span class="section-label">[ WHERE I'VE WORKED ]</span>
+            <h2>Experience</h2>
+
+            <div class="experience-list">
+
+                <div class="experience-card">
+                    <div class="exp-header">
+                        <div>
+                            <h3 class="exp-company">Univision TV Network</h3>
+                            <p class="exp-role">Video Editor &amp; Producer</p>
+                        </div>
+                        <span class="exp-tag">Broadcasting</span>
+                    </div>
+                    <p class="exp-desc">Edited and produced broadcast-ready content for one of the largest
+                        Spanish-language television networks. Managed full production pipelines from raw footage to
+                        final air-ready deliverables.</p>
+                </div>
+
+                <div class="experience-card">
+                    <div class="exp-header">
+                        <div>
+                            <h3 class="exp-company">Eras</h3>
+                            <p class="exp-role">3D Modeler · Animator · VFX Supervisor</p>
+                        </div>
+                        <span class="exp-tag">3D &amp; VFX</span>
+                    </div>
+                    <p class="exp-desc">Led 3D modeling and animation production, supervised visual effects pipelines,
+                        and ensured consistent quality across all rendered deliverables for high-end creative projects.
+                    </p>
+                </div>
+
+                <div class="experience-card">
+                    <div class="exp-header">
+                        <div>
+                            <h3 class="exp-company">Bengal</h3>
+                            <p class="exp-role">Programmer · 3D Visual Artist · Editor</p>
+                        </div>
+                        <span class="exp-tag">Tech &amp; Creative</span>
+                    </div>
+                    <p class="exp-desc">Combined programming and 3D visual production to build interactive experiences
+                        and polished editorial content. Bridged the gap between technical development and creative
+                        direction.</p>
+                </div>
+
+            </div>
+
+            <span id="skills" class="section-label" style="margin-top: 80px; display: block;">[ WHAT I DO ]</span>
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>3D Modeling</h3>
+                    <p>High-fidelity asset creation for film, broadcast, and interactive media.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>3D Animation</h3>
+                    <p>Character animation, motion rigs, and cinematic scene choreography.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Video Editing</h3>
+                    <p>Broadcast-grade editing, color grading, and multi-platform delivery.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Programming</h3>
+                    <p>Interactive tools, web applications, and pipeline scripting.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>VFX</h3>
+                    <p>Compositing, particle systems, simulations, and real-time visual effects.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Motion Graphics</h3>
+                    <p>Animated titles, brand identities, and broadcast design packages.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="contact" class="section alt">
+        <div class="container">
+            <span class="section-label">[ GET IN TOUCH ]</span>
+            <h2>Contact</h2>
+            <div class="contact-content">
+                <p>I'd love to hear from you. Whether you have a project in mind or just want to connect.</p>
+                <div class="contact-info">
+                    <p><strong>Email:</strong> <a href="mailto:cruz9gabriel@gmail.com">cruz9gabriel@gmail.com</a></p>
+                    <p><strong>Phone:</strong> <a href="tel:+17874208368">(787) 420-8368</a></p>
+                </div>
+                <button id="copy-email-btn" class="cta-button">Copy Email</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Gabriel Cruz. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="assets/gg2-glb-data.js"></script>
+    <script src="script.js" defer></script>
+</body>
+
+</html>

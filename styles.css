@@ -649,12 +649,12 @@ footer {
         text-shadow:
             0 0 4px rgba(255,255,255,0.25),
             0 0 6px rgba(180,210,255,0.08);
-        margin-bottom: 8px;
+        margin-bottom: 6px;
     }
     .hero-content {
         gap: 2px;
-        padding-top: 6px;
-        padding-bottom: 6px;
+        padding-top: 4px;
+        padding-bottom: 4px;
     }
     .hero-subtitle {
         font-size: 11px;
@@ -665,20 +665,20 @@ footer {
         margin-bottom: 4px;
     }
     header.hero {
-        padding: 12px 0 6px 0;
+        padding: 10px 0 4px 0;
         min-height: unset;
     }
     .section {
-        padding: 32px 0;
+        padding: 18px 0;
     }
     .section-label {
         font-size: 10px;
         letter-spacing: 2px;
-        margin-bottom: 4px;
+        margin-bottom: 3px;
     }
     .section h2 {
-        font-size: 32px;
-        margin-bottom: 14px;
+        font-size: 30px;
+        margin-bottom: 10px;
     }
     .project-item, .about-text, .exp-desc, .skill-card p, .contact-content p, .exp-role, .exp-company {
         font-size: 12px;
@@ -688,15 +688,15 @@ footer {
         padding: 0 10px;
     }
     .about-section {
-        padding-top: 20px !important;
-        padding-bottom: 20px !important;
-        margin-top: -6px;
+        padding-top: 14px !important;
+        padding-bottom: 14px !important;
+        margin-top: -4px;
     }
     .about-text {
         padding: 10px;
     }
     .experience-list, .skills-grid {
-        gap: 8px;
+        gap: 6px;
     }
     .contact-info p {
         font-size: 11px;
@@ -779,12 +779,18 @@ footer {
 
     .nav-menu a {
         font-size: 9px;
+        display: inline-flex;
+        align-items: center;
+        line-height: 1;
     }
 
     /* Ensure videos stack vertically and fill width */
     .video-band,
     .about-section {
         display: block !important;
+    }
+    .video-band .section {
+        padding: 12px 0 8px 0;
     }
     .band-bg-video,
     .about-bg-video {

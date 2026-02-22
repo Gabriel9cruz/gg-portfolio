@@ -665,8 +665,8 @@ footer {
         margin-bottom: 4px;
     }
     header.hero {
-        padding: 8px 0 4px 0;
-        min-height: auto;
+        padding: 10px 0 4px 0;
+        min-height: unset;
     }
     .section {
         padding: 8px 0;
@@ -713,17 +713,17 @@ footer {
         font-family: inherit;
     }
     .hero-content {
-        gap: 0;
-        padding-top: 0;
-        padding-bottom: 0;
+        gap: 2px;
+        padding-top: 4px;
+        padding-bottom: 4px;
     }
     .hero-description {
-        font-size: 9px;
-        margin-bottom: 2px;
+        font-size: 10px;
+        margin-bottom: 4px;
     }
     header.hero {
-        padding: 8px 0 4px 0;
-        min-height: auto;
+        padding: 10px 0 4px 0;
+        min-height: unset;
     }
 
     .video-band {

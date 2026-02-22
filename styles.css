@@ -645,72 +645,68 @@ footer {
     }
 
     .hero-title {
-        font-size: 38px;
-        text-shadow:
-            0 0 10px rgba(255, 255, 255, 0.5),
-            0 0 20px rgba(180, 210, 255, 0.2);
-        margin-bottom: 10px;
+        font-size: 72px;
     }
     .hero-content {
-        gap: 0;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        gap: unset;
+        padding-top: unset;
+        padding-bottom: unset;
     }
     .hero-description {
-        font-size: 12px;
-        margin-bottom: 8px;
+        font-size: unset;
+        margin-bottom: unset;
     }
     header.hero {
-        padding: 30px 0 10px 0;
-        min-height: unset;
+        padding: unset;
+        min-height: 100vh;
     }
 
-    /* Projects video larger, text smaller and above */
     .video-band {
-        padding: 0;
+        padding: unset;
     }
     .band-bg-video {
-        width: 100vw !important;
-        height: 40vh !important;
-        min-height: 200px;
-        max-height: 350px;
+        width: 100% !important;
+        height: auto !important;
+        min-width: unset !important;
+        min-height: unset !important;
+        max-height: unset;
     }
     .projects-list {
-        margin-bottom: 0;
+        margin-bottom: unset;
     }
     .section-label {
-        font-size: 10px;
-        margin-bottom: 4px;
+        font-size: unset;
+        margin-bottom: unset;
     }
     .section h2 {
-        font-size: 18px;
-        margin-bottom: 8px;
+        font-size: 36px;
+        margin-bottom: unset;
     }
     .project-item {
-        font-size: 10px;
-        margin-bottom: 2px;
+        font-size: unset;
+        margin-bottom: unset;
     }
 
-    /* About video tight next to Projects video, no space */
     .about-section {
-        padding-top: 0 !important;
-        padding-bottom: 0 !important;
-        margin-top: -8px;
+        padding-top: 240px !important;
+        padding-bottom: 240px !important;
+        margin-top: unset;
     }
     .about-bg-video {
-        width: 100vw !important;
-        height: 40vh !important;
-        min-height: 200px;
-        max-height: 350px;
+        width: 100% !important;
+        height: auto !important;
+        min-width: unset !important;
+        min-height: unset !important;
+        max-height: unset;
     }
     .about-section .container {
-        padding-top: 8px;
-        padding-bottom: 8px;
+        padding-top: unset;
+        padding-bottom: unset;
     }
     .about-text {
-        font-size: 10px;
-        padding: 10px;
-        margin-top: 4px;
+        font-size: 16px;
+        padding: 30px;
+        margin-top: unset;
     }
     .nav-menu {
         gap: 15px;

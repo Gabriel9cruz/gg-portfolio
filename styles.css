@@ -663,6 +663,30 @@ footer {
     .section h2 {
         font-size: 36px;
     }
+
+    /* Ensure videos stack vertically and fill width */
+    .video-band,
+    .about-section {
+        display: block !important;
+    }
+    .band-bg-video,
+    .about-bg-video {
+        width: 100% !important;
+        height: auto !important;
+        min-width: unset !important;
+        min-height: unset !important;
+        position: static !important;
+        transform: none !important;
+        margin: 0 auto;
+        display: block;
+    }
+    /* Center nav text inside brackets */
+    .nav-menu li a {
+        display: inline-block;
+        text-align: center;
+        padding: 0 6px;
+        font-family: inherit;
+    }
 }
 
 /* Custom Cursor */

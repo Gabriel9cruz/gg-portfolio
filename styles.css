@@ -66,15 +66,15 @@ body {
 .nav-menu {
     display: flex;
     list-style: none;
-    gap: 30px;
+    gap: 22px;
 }
 
 .nav-menu a {
     text-decoration: none;
     color: #fff;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 600;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     transition: color 0.3s;
 }
 
@@ -645,11 +645,11 @@ footer {
     }
 
     .hero-title {
-        font-size: 42px;
+        font-size: 56px;
         text-shadow:
             0 0 4px rgba(255,255,255,0.25),
             0 0 6px rgba(180,210,255,0.08);
-        margin-bottom: 4px;
+        margin-bottom: 6px;
     }
     .hero-content {
         gap: 2px;
@@ -657,12 +657,12 @@ footer {
         padding-bottom: 4px;
     }
     .hero-subtitle {
-        font-size: 10px;
+        font-size: 11px;
         line-height: 1.05;
     }
     .hero-description {
-        font-size: 9px;
-        margin-bottom: 2px;
+        font-size: 10px;
+        margin-bottom: 4px;
     }
     header.hero {
         padding: 8px 0 4px 0;

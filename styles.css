@@ -645,16 +645,20 @@ footer {
     }
 
     .hero-title {
-        font-size: 32px;
+        font-size: 56px;
         text-shadow:
             0 0 4px rgba(255,255,255,0.3),
             0 0 8px rgba(180,210,255,0.1);
-        margin-bottom: 8px;
+        margin-bottom: 10px;
     }
     .hero-content {
-        gap: 0;
-        padding-top: 8px;
-        padding-bottom: 8px;
+        gap: 4px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .hero-subtitle {
+        font-size: 12px;
+        line-height: 1.1;
     }
     .hero-description {
         font-size: 11px;

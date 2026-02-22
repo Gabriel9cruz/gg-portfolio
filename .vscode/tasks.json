@@ -1,0 +1,15 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "open-portfolio",
+			"type": "shell",
+			"command": "start",
+			"args": [
+				"index.html"
+			],
+			"isBackground": false,
+			"group": "build"
+		}
+	]
+}

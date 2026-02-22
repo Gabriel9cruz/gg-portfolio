@@ -645,11 +645,11 @@ footer {
     }
 
     .hero-title {
-        font-size: 56px;
+        font-size: 42px;
         text-shadow:
             0 0 4px rgba(255,255,255,0.25),
             0 0 6px rgba(180,210,255,0.08);
-        margin-bottom: 6px;
+        margin-bottom: 4px;
     }
     .hero-content {
         gap: 2px;
@@ -657,28 +657,28 @@ footer {
         padding-bottom: 4px;
     }
     .hero-subtitle {
-        font-size: 11px;
+        font-size: 10px;
         line-height: 1.05;
     }
     .hero-description {
-        font-size: 10px;
-        margin-bottom: 4px;
+        font-size: 9px;
+        margin-bottom: 2px;
     }
     header.hero {
-        padding: 10px 0 4px 0;
-        min-height: unset;
+        padding: 8px 0 4px 0;
+        min-height: auto;
     }
     .section {
-        padding: 18px 0;
+        padding: 8px 0;
     }
     .section-label {
-        font-size: 10px;
+        font-size: 9px;
         letter-spacing: 2px;
-        margin-bottom: 3px;
+        margin-bottom: 2px;
     }
     .section h2 {
-        font-size: 30px;
-        margin-bottom: 10px;
+        font-size: 28px;
+        margin-bottom: 6px;
     }
     .project-item, .about-text, .exp-desc, .skill-card p, .contact-content p, .exp-role, .exp-company {
         font-size: 12px;
@@ -688,12 +688,12 @@ footer {
         padding: 0 10px;
     }
     .about-section {
-        padding-top: 14px !important;
-        padding-bottom: 14px !important;
-        margin-top: -4px;
+        padding-top: 12px !important;
+        padding-bottom: 12px !important;
+        margin-top: 0;
     }
     .about-text {
-        padding: 10px;
+        padding: 12px;
     }
     .experience-list, .skills-grid {
         gap: 6px;
@@ -713,17 +713,17 @@ footer {
         font-family: inherit;
     }
     .hero-content {
-        gap: unset;
-        padding-top: unset;
-        padding-bottom: unset;
+        gap: 0;
+        padding-top: 0;
+        padding-bottom: 0;
     }
     .hero-description {
-        font-size: unset;
-        margin-bottom: unset;
+        font-size: 9px;
+        margin-bottom: 2px;
     }
     header.hero {
-        padding: unset;
-        min-height: 100vh;
+        padding: 8px 0 4px 0;
+        min-height: auto;
     }
 
     .video-band {
@@ -740,22 +740,22 @@ footer {
         margin-bottom: unset;
     }
     .section-label {
-        font-size: unset;
-        margin-bottom: unset;
+        font-size: 9px;
+        margin-bottom: 2px;
     }
     .section h2 {
-        font-size: 36px;
-        margin-bottom: unset;
+        font-size: 28px;
+        margin-bottom: 6px;
     }
     .project-item {
-        font-size: unset;
-        margin-bottom: unset;
+        font-size: 12px;
+        margin-bottom: 2px;
     }
 
     .about-section {
-        padding-top: 240px !important;
-        padding-bottom: 240px !important;
-        margin-top: unset;
+        padding-top: 12px !important;
+        padding-bottom: 12px !important;
+        margin-top: 0;
     }
     .about-bg-video {
         width: 100% !important;
@@ -769,9 +769,9 @@ footer {
         padding-bottom: unset;
     }
     .about-text {
-        font-size: 16px;
-        padding: 30px;
-        margin-top: unset;
+        font-size: 12px;
+        padding: 12px;
+        margin-top: 0;
     }
     .nav-menu {
         gap: 10px;
@@ -790,7 +790,7 @@ footer {
         display: block !important;
     }
     .video-band .section {
-        padding: 12px 0 8px 0;
+        padding: 6px 0 4px 0;
     }
     .band-bg-video,
     .about-bg-video {
@@ -802,6 +802,17 @@ footer {
         transform: none !important;
         margin: 0 auto;
         display: block;
+    }
+    #projects {
+        min-height: auto;
+        align-items: flex-start;
+        padding: 8px 0;
+    }
+    #projects .container {
+        padding-top: 4px;
+    }
+    .projects-list {
+        margin-top: 6px;
     }
     /* Center nav text inside brackets */
     .nav-menu li a {

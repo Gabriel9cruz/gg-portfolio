@@ -6,6 +6,9 @@ A personal portfolio website for Gabriel Cruz.
 
 Open `index.html` in your web browser to view the portfolio.
 
+### VS Code task
+- Run the `open-portfolio` task to launch the site locally (Task: Run Task → open-portfolio).
+
 ## Structure
 
 - `index.html`: Main HTML file

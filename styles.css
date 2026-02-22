@@ -647,58 +647,63 @@ footer {
     .hero-title {
         font-size: 56px;
         text-shadow:
-            0 0 4px rgba(255,255,255,0.3),
-            0 0 8px rgba(180,210,255,0.1);
-        margin-bottom: 10px;
+            0 0 4px rgba(255,255,255,0.25),
+            0 0 6px rgba(180,210,255,0.08);
+        margin-bottom: 8px;
     }
     .hero-content {
-        gap: 4px;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        gap: 2px;
+        padding-top: 6px;
+        padding-bottom: 6px;
     }
     .hero-subtitle {
-        font-size: 12px;
-        line-height: 1.1;
+        font-size: 11px;
+        line-height: 1.05;
     }
     .hero-description {
-        font-size: 11px;
-        margin-bottom: 6px;
+        font-size: 10px;
+        margin-bottom: 4px;
     }
     header.hero {
-        padding: 16px 0 8px 0;
+        padding: 12px 0 6px 0;
         min-height: unset;
     }
+    .section {
+        padding: 32px 0;
+    }
     .section-label {
-        font-size: 9px;
-        margin-bottom: 2px;
+        font-size: 10px;
+        letter-spacing: 2px;
+        margin-bottom: 4px;
     }
     .section h2 {
-        font-size: 16px;
-        margin-bottom: 6px;
+        font-size: 32px;
+        margin-bottom: 14px;
     }
-    .project-item, .about-text, .exp-desc, .skill-card p, .contact-content p {
-        font-size: 10px;
+    .project-item, .about-text, .exp-desc, .skill-card p, .contact-content p, .exp-role, .exp-company {
+        font-size: 12px;
         margin-bottom: 2px;
     }
     .container {
-        padding: 0 8px;
+        padding: 0 10px;
     }
     .about-section {
-        padding-top: 16px !important;
-        padding-bottom: 16px !important;
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+        margin-top: -6px;
     }
     .about-text {
-        padding: 8px;
+        padding: 10px;
     }
     .experience-list, .skills-grid {
-        gap: 6px;
+        gap: 8px;
     }
     .contact-info p {
-        font-size: 10px;
+        font-size: 11px;
     }
     footer {
-        padding: 8px 0;
-        font-size: 10px;
+        padding: 10px 0;
+        font-size: 11px;
     }
     /* Center nav text inside brackets */
     .nav-menu li a {
@@ -769,19 +774,11 @@ footer {
         margin-top: unset;
     }
     .nav-menu {
-        gap: 15px;
+        gap: 10px;
     }
 
     .nav-menu a {
-        font-size: 10px;
-    }
-
-    .container {
-        padding: 0 20px;
-    }
-
-    .section h2 {
-        font-size: 36px;
+        font-size: 9px;
     }
 
     /* Ensure videos stack vertically and fill width */
@@ -803,8 +800,8 @@ footer {
     /* Center nav text inside brackets */
     .nav-menu li a {
         display: inline-block;
-        text-align: center;
-        padding: 0 6px;
+        text-align: left;
+        padding: 0 4px;
         font-family: inherit;
     }
 }

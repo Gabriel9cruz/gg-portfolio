@@ -645,7 +645,63 @@ footer {
     }
 
     .hero-title {
-        font-size: 72px;
+        font-size: 32px;
+        text-shadow:
+            0 0 4px rgba(255,255,255,0.3),
+            0 0 8px rgba(180,210,255,0.1);
+        margin-bottom: 8px;
+    }
+    .hero-content {
+        gap: 0;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    .hero-description {
+        font-size: 11px;
+        margin-bottom: 6px;
+    }
+    header.hero {
+        padding: 16px 0 8px 0;
+        min-height: unset;
+    }
+    .section-label {
+        font-size: 9px;
+        margin-bottom: 2px;
+    }
+    .section h2 {
+        font-size: 16px;
+        margin-bottom: 6px;
+    }
+    .project-item, .about-text, .exp-desc, .skill-card p, .contact-content p {
+        font-size: 10px;
+        margin-bottom: 2px;
+    }
+    .container {
+        padding: 0 8px;
+    }
+    .about-section {
+        padding-top: 16px !important;
+        padding-bottom: 16px !important;
+    }
+    .about-text {
+        padding: 8px;
+    }
+    .experience-list, .skills-grid {
+        gap: 6px;
+    }
+    .contact-info p {
+        font-size: 10px;
+    }
+    footer {
+        padding: 8px 0;
+        font-size: 10px;
+    }
+    /* Center nav text inside brackets */
+    .nav-menu li a {
+        display: inline-block;
+        text-align: center;
+        padding: 0 4px;
+        font-family: inherit;
     }
     .hero-content {
         gap: unset;

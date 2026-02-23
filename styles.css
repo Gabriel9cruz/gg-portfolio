@@ -419,9 +419,6 @@ body {
     z-index: 10;
 }
 
-.dual-video-band {
-    display: block;
-}
 
 /* The looping video fills the entire band */
 .band-bg-video {
@@ -492,44 +489,6 @@ body {
     z-index: 2;
 }
 
-/* Tablet side-by-side videos (iPad widths) */
-@media (min-width: 769px) and (max-width: 1180px) {
-    .dual-video-band {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 0;
-    }
-
-    .dual-video-band .video-band,
-    .dual-video-band .about-section {
-        position: relative;
-        overflow: hidden;
-        min-height: 70vh;
-        padding: 0;
-    }
-
-    .dual-video-band .video-band .section,
-    .dual-video-band .about-section .container {
-        padding: 80px 32px;
-    }
-
-    .dual-video-band .band-bg-video,
-    .dual-video-band .about-bg-video {
-        position: absolute;
-        inset: 0;
-        width: 100%;
-        height: 100%;
-        min-width: 100%;
-        min-height: 100%;
-        object-fit: cover;
-        transform: none;
-    }
-
-    .dual-video-band .band-overlay,
-    .dual-video-band .about-video-overlay {
-        inset: 0;
-    }
-}
 
 
 #skills {

@@ -871,3 +871,32 @@ footer {
         transform: translateY(0);
     }
 }
+
+/* iPad layout tweaks */
+@media (min-width: 769px) and (max-width: 1180px) {
+    .section {
+        padding: 60px 0;
+    }
+
+    .video-band {
+        margin: 0;
+    }
+
+    .video-band .section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .about-section {
+        padding-top: 40px !important;
+        padding-bottom: 60px !important;
+        margin-top: -10px;
+    }
+
+    .about-text {
+        max-width: 520px;
+        padding: 18px;
+        font-size: 13px;
+        line-height: 1.7;
+    }
+}

@@ -1,4 +1,40 @@
-﻿// ── Seamless marquee init ────────────────────────────────────────────────────
+﻿// ── Mobile Video Autoplay Fix ────────────────────────────────────────────────────
+(function initMobileVideos() {
+    // Get all video elements
+    const videos = document.querySelectorAll('video');
+    
+    videos.forEach((video) => {
+        // Ensure video attributes are set for mobile
+        video.setAttribute('playsinline', '');
+        video.setAttribute('webkit-playsinline', '');
+        video.muted = true; // Must be muted for autoplay to work
+        
+        // Try to play and handle errors gracefully
+        const playPromise = video.play();
+        if (playPromise !== undefined) {
+            playPromise.catch((error) => {
+                console.log('Video autoplay prevented:', error);
+                // Fallback: show video on first user interaction
+                document.addEventListener('click', () => {
+                    video.play().catch(err => console.log('Play failed:', err));
+                }, { once: true });
+            });
+        }
+    });
+    
+    // Handle visibility changes (pause when tab is hidden)
+    document.addEventListener('visibilitychange', () => {
+        videos.forEach((video) => {
+            if (document.hidden) {
+                video.pause();
+            } else {
+                video.play().catch(err => console.log('Resume play failed:', err));
+            }
+        });
+    });
+})();
+
+// ── Seamless marquee init ────────────────────────────────────────────────────
 (function initMarquee() {
     const track = document.querySelector('.marquee-track');
     if (!track) return;

@@ -8,6 +8,12 @@
         video.setAttribute('playsinline', '');
         video.setAttribute('webkit-playsinline', '');
         video.muted = true; // Must be muted for autoplay to work
+        video.loop = true;
+
+        video.addEventListener('ended', () => {
+            video.currentTime = 0;
+            video.play().catch(() => {});
+        }, { passive: true });
         
         // Try to play and handle errors gracefully
         const playPromise = video.play();

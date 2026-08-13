@@ -1,40 +1,41 @@
 ﻿// ── Mobile Video Autoplay Fix ────────────────────────────────────────────────────
 (function initMobileVideos() {
-    // Get all video elements
     const videos = document.querySelectorAll('video');
-    
-    videos.forEach((video) => {
-        // Ensure video attributes are set for mobile
+
+    const prepareVideo = (video) => {
+        if (!video) return;
+
         video.setAttribute('playsinline', '');
         video.setAttribute('webkit-playsinline', '');
-        video.muted = true; // Must be muted for autoplay to work
+        video.muted = true;
         video.loop = true;
+        video.preload = 'auto';
 
-        video.addEventListener('ended', () => {
-            video.currentTime = 0;
-            video.play().catch(() => {});
-        }, { passive: true });
-        
-        // Try to play and handle errors gracefully
         const playPromise = video.play();
-        if (playPromise !== undefined) {
-            playPromise.catch((error) => {
-                console.log('Video autoplay prevented:', error);
-                // Fallback: show video on first user interaction
-                document.addEventListener('click', () => {
-                    video.play().catch(err => console.log('Play failed:', err));
-                }, { once: true });
+        if (playPromise) {
+            playPromise.catch(() => {
+                const resumeOnInteraction = () => {
+                    video.play().catch(() => {});
+                };
+
+                ['pointerdown', 'touchstart', 'click'].forEach((eventName) => {
+                    document.addEventListener(eventName, resumeOnInteraction, { once: true, passive: true });
+                });
             });
         }
-    });
-    
-    // Handle visibility changes (pause when tab is hidden)
+    };
+
+    videos.forEach((video) => prepareVideo(video));
+
     document.addEventListener('visibilitychange', () => {
+        if (document.hidden) {
+            videos.forEach((video) => video.pause());
+            return;
+        }
+
         videos.forEach((video) => {
-            if (document.hidden) {
-                video.pause();
-            } else {
-                video.play().catch(err => console.log('Resume play failed:', err));
+            if (video.readyState >= 2) {
+                video.play().catch(() => {});
             }
         });
     });

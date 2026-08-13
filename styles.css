@@ -334,17 +334,15 @@ body {
     font-weight: 700;
     color: #fff;
     background: transparent;
-    /* Remove background */
     padding: 0;
-    /* Remove padding */
     border: none;
-    /* Remove border */
     box-shadow: none;
-    /* Remove shadow */
-    cursor: default;
+    cursor: pointer;
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+    display: block;
 }
 
 .project-item:hover {
@@ -355,10 +353,183 @@ body {
     border-color: transparent;
 }
 
+.project-page {
+    background: rgba(6, 9, 16, 0.9);
+}
 
-/* Projects Grid */
-.projects-grid {
+.project-detail-page {
+    position: relative;
+    z-index: 10;
+}
+
+.project-detail-hero {
+    position: relative;
+    overflow: hidden;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(10, 14, 24, 0.18);
+}
+
+.project-detail-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(circle at 18% 35%, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0) 22%),
+        radial-gradient(circle at 50% 48%, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0) 42%),
+        radial-gradient(circle at 70% 60%, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0) 28%);
+    filter: blur(60px);
+    opacity: 0.8;
+}
+
+.project-detail-hero .container {
+    position: relative;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    width: 100%;
+    min-height: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+}
+
+.project-detail-hero .section-label {
+    margin-left: 16px;
+    margin-bottom: 10px;
+}
+
+.project-detail-hero h1 {
+    margin-left: 16px;
+    width: 100%;
+    text-align: left;
+}
+
+.project-detail-hero h1 {
+    font-size: clamp(72px, 8vw, 150px);
+    line-height: 0.9;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #f5f8ff;
+    text-shadow: 0 0 22px rgba(255, 255, 255, 0.18), 0 0 46px rgba(118, 170, 255, 0.25);
+    display: inline-block;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.project-detail-hero h1::after {
+    content: "";
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    bottom: -6px;
+    height: 14px;
+    border-radius: 999px;
+    background: rgba(163, 201, 255, 0.26);
+    box-shadow: 0 0 20px rgba(163, 201, 255, 0.42), 0 0 42px rgba(163, 201, 255, 0.22);
+    filter: blur(14px);
+    opacity: 0.9;
+}
+
+.project-detail-grid {
     display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    align-items: stretch;
+}
+
+.project-video-frame {
+    position: relative;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(12px);
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.detail-video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background: #000;
+}
+
+.vertical-project-video-frame {
+    max-width: 560px;
+    aspect-ratio: 9 / 16;
+}
+
+.vertical-detail-video {
+    object-fit: cover;
+}
+
+.detail-copy {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 32px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 14px;
+    box-shadow: 0 18px 40px rgba(4, 10, 24, 0.35);
+    backdrop-filter: blur(18px) saturate(1.3);
+    -webkit-backdrop-filter: blur(18px) saturate(1.3);
+}
+
+@media (max-width: 900px) {
+    .project-detail-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.detail-copy h2 {
+    margin-bottom: 18px;
+    font-size: clamp(46px, 5vw, 72px);
+    line-height: 0.95;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 0 0 18px rgba(255, 255, 255, 0.12);
+}
+
+.detail-copy p {
+    font-size: 17px;
+    line-height: 1.9;
+    color: rgba(238, 245, 255, 0.9);
+    max-width: none;
+    margin-bottom: 22px;
+    text-shadow: 0 0 10px rgba(10, 20, 38, 0.25);
+}
+
+.detail-copy .cta-button {
+    margin-top: 10px;
+}
+
+@media (max-width: 900px) {
+    .project-detail-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .detail-video {
+        height: 420px;
+    }
+
+    .detail-copy {
+        padding: 24px 20px;
+    }
+}
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 40px;
 }
